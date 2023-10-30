@@ -17,7 +17,7 @@ for better organization.
 
 ### Abstraction and Inheritance:
 
-<img src='https://raw.githubusercontent.com/Juhyung8371/2D-Sandbox-Game/main/readme_images/inheritance.png' align='right'>
+<img src='https://raw.githubusercontent.com/Juhyung8371/2D-Sandbox-Game/main/readme_images/inheritance.png' align='right' height=250>
 
 Abstraction refers to the act of representing the essential features 
 without specifying the detail properties of it. Abstraction is often 
@@ -31,7 +31,7 @@ can be added to daughter class without modifying the mother class.
 
 Encapsulation is the process of hiding one’s data and giving only limited level of access to protect the data from unwanted access. So, the class provides two methods called mutator and accessor to provide the other classes the indirect and limited access to its data.
 
-<img src='https://raw.githubusercontent.com/Juhyung8371/2D-Sandbox-Game/main/readme_images/encapsulation.png'>
+<img src='https://raw.githubusercontent.com/Juhyung8371/2D-Sandbox-Game/main/readme_images/encapsulation.png' height=100>
 
 For example, “inventory” is encapsulated with a “private” access modifier. So, an accessor method “getInventory“ allows other classes to see the inventory data. However, I didn’t make a mutator method to prevent other classes to modify the inventory data. And this is what makes encapsulation such a strong programming technique.
 
@@ -39,9 +39,11 @@ For example, “inventory” is encapsulated with a “private” access modifie
 
 Polymorphism is the practice to allow classes to behave differently to provide fluent modification of data. Polymorphism is extensively used alongside with inheritance since data morphing only works towards the more abstract side. Below image is an example of polymorphism. Even though “addEntity” method only receives Entity class as its parameter, it works for all the classes that extend Entity class. Polymorphism is another feature that makes inheritance feature of OOP style of Java so convenient.
 
-(--------image -----------)
+<img src='https://raw.githubusercontent.com/Juhyung8371/2D-Sandbox-Game/main/readme_images/polymorphism.png' height="200">
 
 ### Association
 
 Association is the method to establish the connections between classes through another class. When one class has an object referencing to the other class it’s called “has-a” relationship. For example, Inventory class is associated with Item class and UIObject class. By establishing the connection between Items and the UIObjects to visualize the Items, the Inventory class is created. Therefore, the strength of association is the ability to combine many classes to create a very useful and complex class with many properties. 
+
+<img src='https://raw.githubusercontent.com/Juhyung8371/2D-Sandbox-Game/main/readme_images/association.png' height="150">
 
