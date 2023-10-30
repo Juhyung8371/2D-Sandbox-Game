@@ -8,7 +8,7 @@ Therefore, I made a 2D sandbox game engine from scratch with Java.
 I could've used existing libraries or game engines like Unity, Unreal, Godot, etc.
 However, I did not - hoping to get more in-depth insight into game development.
 
-## Design
+## Object-Oriented-Programming Design
 
 <img src='https://raw.githubusercontent.com/Juhyung8371/2D-Sandbox-Game/main/readme_images/design.png'>
 
@@ -45,5 +45,27 @@ Polymorphism is the practice to allow classes to behave differently to provide f
 
 Association is the method to establish the connections between classes through another class. When one class has an object referencing to the other class it’s called “has-a” relationship. For example, Inventory class is associated with Item class and UIObject class. By establishing the connection between Items and the UIObjects to visualize the Items, the Inventory class is created. Therefore, the strength of association is the ability to combine many classes to create a very useful and complex class with many properties. 
 
-<img src='https://raw.githubusercontent.com/Juhyung8371/2D-Sandbox-Game/main/readme_images/association.png' height="150">
+<img src='https://raw.githubusercontent.com/Juhyung8371/2D-Sandbox-Game/main/readme_images/association.png' height=100>
+
+## Other Implementations Highlight
+
+### Artificial Intelligence
+
+
+
+
+
+
+### Infinite Map
+
+### Random Map Generation 
+
+I implemented a random map generation feature using noise (Simplex Noise). Noise is a random group of numbers determined by its frequency and amplitude. However, it is cloude-like shape generally, and this behavior will make the climate transition more natural. A noise typically looks like the image below on the left.
+
+<img src='https://raw.githubusercontent.com/Juhyung8371/2D-Sandbox-Game/main/readme_images/noise.png' height="150"> 
+<img src='https://raw.githubusercontent.com/Juhyung8371/2D-Sandbox-Game/main/readme_images/climate_map.png' height="150">
+
+The magic happens when we apply the idea of climate components to this seemingly meaningless cloud of noises. For example, I can make noises for elevation and moisture, and use them to determine the climate (see the mositure vs elevation graph above on the right). For example, if elevation is very low, then it will be lake, since water gathers in the low elevated area geographically. And if elevation is normal but moisture is high, then the climate will be rainforest. Check the example map below:
+
+<img src='https://raw.githubusercontent.com/Juhyung8371/2D-Sandbox-Game/main/readme_images/map.png' height="200">
 
