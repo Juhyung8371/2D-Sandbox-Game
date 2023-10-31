@@ -68,9 +68,15 @@ Passive Tasks:
 
 #### A* Pathfinding
 
+A* algorithm is one of the best and popular path-finding and graph traversals techniques for its simplicity and power.
+
+I find the best path by minimizing the distance from the current node to the starting point and distance from the current node to the goal. The heuristic is like the following:
+
+<img src='https://raw.githubusercontent.com/Juhyung8371/2D-Sandbox-Game/main/readme_images/a-star.png' width=350>
+
+And this is how it worked in-game:
 
 <img src='https://raw.githubusercontent.com/Juhyung8371/2D-Sandbox-Game/main/readme_images/pathfinding.gif' width=400>
-
 
 ### Infinite Map and Chunking
 
