@@ -26,7 +26,6 @@ Inheritance is a process of acquiring one’s structure and data by deriving
 a new (daughter) class from the original (mother) class. Additional features 
 can be added to daughter class without modifying the mother class. 
 
-
 ### Encapsulation:
 
 Encapsulation is the process of hiding one’s data and giving only limited level of access to protect the data from unwanted access. So, the class provides two methods called mutator and accessor to provide the other classes the indirect and limited access to its data.
@@ -98,8 +97,11 @@ The magic happens when we apply the idea of climate components to this seemingly
 
 ### Graphical User Interface
 
+<img src='https://raw.githubusercontent.com/Juhyung8371/2D-Sandbox-Game/main/readme_images/ui.gif' width=400>
 
+GUI is one of the easiest ways for users to interact with computers. I implemented various GUI components such as button, text edit box, scrollbar, label, etc. 
 
+OOP techniques like inheritance made the implementation easier. For example, let's say I made a button. Then, a text edit box is a button with mutable text, and a label is a button with a text or image that can't be pressed.
 
 ## Discussion
 
