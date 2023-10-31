@@ -6,7 +6,7 @@ To achieve that, I needed a game engine with full access to everything in the ga
 Therefore, I made a 2D sandbox game engine from scratch with Java.
 
 I could've used existing libraries or game engines like Unity, Unreal, Godot, etc.
-However, I did not - hoping to get more in-depth insight into game development.
+However, I did not - hoping to get more in-depth insight into game development by starting from the very beginning.
 
 ## Object-Oriented-Programming Design
 
@@ -53,7 +53,7 @@ Association is the method to establish the connections between classes through a
 
 AI in this game works by running the task with the highest priority from the list. In a nutshell, it's a collection of if-else.
 
-Also, there are two types of tasks in my game: active and passive tasks. They can run simulataneously, however, active tasks have much higher priority than passive tasks. 
+Also, there are two types of tasks in my game: active and passive tasks. They can run simultaneously, however, active tasks have much higher priority than passive tasks. 
 
 For example, there is an entity called wolf. A wolf wanders around until it finds a target. Then the wolf chases the target and attacks it. This behavior can be portrayed in this manner:
 
@@ -68,9 +68,7 @@ Passive Tasks:
 
 #### A* Pathfinding
 
-A* algorithm is one of the best and popular path-finding and graph traversals techniques for its simplicity and power.
-
-I find the best path by minimizing the distance from the current node to the starting point and distance from the current node to the goal. The heuristic is like the following:
+A* algorithm is one of the best and popular path-finding and graph traversals techniques for its simplicity and power. It finds the best path by minimizing the distance from the current node to the starting point and distance from the current node to the goal. The heuristic is like the following:
 
 <img src='https://raw.githubusercontent.com/Juhyung8371/2D-Sandbox-Game/main/readme_images/a-star.png' width=350>
 
@@ -97,4 +95,16 @@ I implemented a random map generation feature using noise (Simplex Noise). Noise
 The magic happens when we apply the idea of climate components to this seemingly meaningless cloud of noises. For example, I can make noises for elevation and moisture, and use them to determine the climate (see the mositure vs elevation graph above on the right). For example, if elevation is very low, then it will be lake, since water gathers in the low elevated area geographically. And if elevation is normal but moisture is high, then the climate will be rainforest. Check the example map below:
 
 <img src='https://raw.githubusercontent.com/Juhyung8371/2D-Sandbox-Game/main/readme_images/map.png' height="200">
+
+### Graphical User Interface
+
+
+
+
+## Discussion
+
+I successfully created a 2D sandbox game engine with desired features like map, entities, artificial intelligence, graphical user interface, etc. 
+
+Using various OOP techniques, I made this project modular, scalable, and easy to maintain. For instance, if I want to add a new entity, a zombie for instance, I can simply extend the HostileEntity class add some pre-built AIs like chase and attack.
+
 
