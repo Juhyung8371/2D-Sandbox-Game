@@ -51,19 +51,42 @@ Association is the method to establish the connections between classes through a
 
 ### Artificial Intelligence
 
+AI in this game works by running the task with the highest priority from the list. In a nutshell, it's a collection of if-else.
+
+Also, there are two types of tasks in my game: active and passive tasks. They can run simulataneously, however, active tasks have much higher priority than passive tasks. 
+
+For example, there is an entity called wolf. A wolf wanders around until it finds a target. Then the wolf chases the target and attacks it. This behavior can be portrayed in this manner:
+
+Active Tasks:
+1. Attack (if the target is close)
+2. Find target (if the target is not set)
+3. Find a path to the target (if the target exists)
+4. Move towards the target (if there is a valid path to the target)
+
+Passive Tasks:
+1. Wander (if there is no target)
+
+#### A* Pathfinding
 
 
+<img src='https://raw.githubusercontent.com/Juhyung8371/2D-Sandbox-Game/main/readme_images/pathfinding.gif' width=400>
 
 
+### Infinite Map and Chunking
 
-### Infinite Map
+I added an infinite map feature to add more flexibility to the game, and added chunking feature to improve the map loading performance. 
+
+An infinite map can be accomplished by dividing the map into smaller chunks – and I call this “Chunking”. So, the idea behind chunking is to only deal with the chunks near the player. 
+
+<img src='https://raw.githubusercontent.com/Juhyung8371/2D-Sandbox-Game/main/readme_images/chunk.png' height="250">
+
+In the above image, each cell is a chunk, which contains many data about that part of the map like tiles, entities, etc. The red box represents the screen visible to the user, the green circles represent the loaded chunks and red crossed out circles are the chunks too far away that we don’t bother updating. If the player moves toward east, then the unloaded chunks on the far east will load, and the chunks on the far west will save its data and unload. 
 
 ### Random Map Generation 
 
 I implemented a random map generation feature using noise (Simplex Noise). Noise is a random group of numbers determined by its frequency and amplitude. However, it is cloude-like shape generally, and this behavior will make the climate transition more natural. A noise typically looks like the image below on the left.
 
-<img src='https://raw.githubusercontent.com/Juhyung8371/2D-Sandbox-Game/main/readme_images/noise.png' height="150"> 
-<img src='https://raw.githubusercontent.com/Juhyung8371/2D-Sandbox-Game/main/readme_images/climate_map.png' height="150">
+<img src='https://raw.githubusercontent.com/Juhyung8371/2D-Sandbox-Game/main/readme_images/noise.png' height="150"> <img src='https://raw.githubusercontent.com/Juhyung8371/2D-Sandbox-Game/main/readme_images/climate_map.png' height="150">
 
 The magic happens when we apply the idea of climate components to this seemingly meaningless cloud of noises. For example, I can make noises for elevation and moisture, and use them to determine the climate (see the mositure vs elevation graph above on the right). For example, if elevation is very low, then it will be lake, since water gathers in the low elevated area geographically. And if elevation is normal but moisture is high, then the climate will be rainforest. Check the example map below:
 
