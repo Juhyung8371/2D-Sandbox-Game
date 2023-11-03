@@ -42,7 +42,7 @@ Polymorphism is the practice of allowing classes to behave differently to provid
 
 ### Association
 
-Association is the method to establish the connections between classes through another class. When one class has an object referencing to the other class it’s called a “has-a” relationship. For example, the Inventory class is associated with the Item class and UIObject class. By establishing the connection between Items and the UIObjects to visualize the Items, the Inventory class is created. Therefore, the strength of association is the ability to combine many classes to create a very useful and complex class with many properties. 
+Association is the method to establish the connections between classes through another class. When one class has an object referencing the other class, it’s called a “has-a” relationship. For example, the Inventory class is associated with the Item class and UIObject class. By establishing the connection between Items and the UIObjects to visualize the Items, the Inventory class is created. Therefore, the strength of association is the ability to combine many classes to create a very useful and complex class with many properties. 
 
 <img src='https://raw.githubusercontent.com/Juhyung8371/2D-Sandbox-Game/main/readme_images/association.png' height=100>
 
