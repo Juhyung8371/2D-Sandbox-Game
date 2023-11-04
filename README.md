@@ -77,13 +77,13 @@ And this is how it worked in-game:
 
 ### Infinite Map and Chunking
 
-I added an infinite map feature to add more flexibility to the game and added a chunking feature to improve the map loading performance. 
+I added an infinite map feature to add more flexibility to the game and a chunking feature to improve the map loading performance. 
 
-An infinite map can be accomplished by dividing the map into smaller chunks – and I call this “Chunking”. So, the idea behind chunking is to only deal with the chunks near the player. 
+An infinite map can be accomplished by dividing the map into smaller chunks – and I call this “Chunking.” So, the idea behind chunking is to only deal with the chunks near the player. 
 
 <img src='https://raw.githubusercontent.com/Juhyung8371/2D-Sandbox-Game/main/readme_images/chunk.png' height="250">
 
-In the above image, each cell is a chunk, which contains data about that part of the map, like tiles, entities, etc. The red box represents the screen visible to the user, the green circles represent the loaded chunks, and the red crossed-out circles are the chunks too far away that we don’t bother updating. If the player moves toward the east, then the unloaded chunks on the far east will load, and the chunks on the far west will save their data and unload. 
+In the above image, each cell is a chunk, which contains data about that part of the map, like tiles, entities, etc. The red box represents the screen visible to the user, the green circles represent the loaded chunks, and the red crossed-out circles are the chunks too far away that we don’t bother updating. If the player moves toward the east, the unloaded chunks on the far east will load, and the chunks on the far west will save their data and unload. 
 
 ### Random Map Generation 
 
@@ -101,7 +101,7 @@ The magic happens when we apply the idea of climate components to this seemingly
 
 GUI is one of the easiest ways for users to interact with computers. I implemented various GUI components such as buttons, text edit box, scrollbar, label, etc. 
 
-OOP techniques like inheritance made the implementation easier. For example, let's say I made a button. Then, a text edit box is a button with mutable text, and a label is a button with a text or image that can't be pressed.
+OOP techniques like inheritance made the implementation easier. For example, let’s say I made a button. Then, a text edit box is a button with mutable text, and a label is a button with a text or image that can’t be pressed.
 
 ## Discussion
 
