@@ -1,4 +1,4 @@
-# 2D-Sandbox-Game
+# 2D Sandbox Game Engine from scratch
  
 ## Define the Problem and Proposed Solution
 I love playing with AI, and that made me want to have a versatile and resourceful playground.
