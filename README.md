@@ -1,7 +1,7 @@
 # 2D Sandbox Game Engine from scratch
  
 ## Define the Problem and Proposed Solution
-I love playing with AI, and that made me want to have a versatile and resourceful playground.
+I love playing with AI, which made me want a versatile and resourceful playground.
 To achieve that, I needed a game engine with full access to everything in the game.
 Therefore, I made a 2D sandbox game engine from scratch with Java.
 
@@ -22,27 +22,27 @@ for better organization.
 Abstraction refers to the act of representing the essential features 
 without specifying their detailed properties. Abstraction is often 
 used to create the inheritance of classes for better organization of classes. 
-Inheritance is a process of acquiring one’s structure and data by deriving 
+Inheritance is a process of acquiring one's structure and data by deriving 
 a new (daughter) class from the original (mother) class. Additional features 
 can be added to the daughter class without modifying the mother class. 
 
 ### Encapsulation:
 
-Encapsulation is the process of hiding one’s data and giving only a limited level of access to protect the data from unwanted access. So, the class provides two methods called mutator and accessor to provide the other classes the indirect and limited access to its data.
+Encapsulation is the process of hiding one's data and giving only a limited level of access to protect the data from unwanted access. So, the class provides two methods, mutator, and accessor, to provide the other classes with indirect and limited access to its data.
 
 <img src='https://raw.githubusercontent.com/Juhyung8371/2D-Sandbox-Game/main/readme_images/encapsulation.png' height=100>
 
-For example, “inventory” is encapsulated with a “private” access modifier. So, an accessor method, "getInventory", allows other classes to see the inventory data. However, I didn’t make a mutator method to prevent other classes from modifying the inventory data. And this is what makes encapsulation such a strong programming technique.
+For example, "inventory" is encapsulated with a "private" access modifier. So, an accessor method, "getInventory", allows other classes to see the inventory data. However, I didn't make a mutator method to prevent other classes from modifying the inventory data. And this is what makes encapsulation such a strong programming technique.
 
 ### Polymorphism:
 
-Polymorphism is the practice of allowing classes to behave differently to provide fluent modification of data. Polymorphism is extensively used alongside inheritance since data morphing only works towards the more abstract side. The below image is an example of polymorphism. Even though the “addEntity” method only receives the Entity class as its parameter, it works for all the classes that extend the Entity class. Polymorphism is another feature that makes the inheritance feature of the OOP style of Java so convenient.
+Polymorphism is the practice of allowing classes to behave differently to provide fluent data modification. Polymorphism is extensively used alongside inheritance since data morphing only works towards the more abstract side. The below image is an example of polymorphism. Even though the "addEntity" method only receives the Entity class as its parameter, it works for all the classes that extend the Entity class. Polymorphism is another feature that makes the inheritance feature of the OOP style of Java so convenient.
 
 <img src='https://raw.githubusercontent.com/Juhyung8371/2D-Sandbox-Game/main/readme_images/polymorphism.png' height="200">
 
 ### Association
 
-Association is the method to establish the connections between classes through another class. When one class has an object referencing the other class, it’s called a “has-a” relationship. For example, the Inventory class is associated with the Item class and UIObject class. By establishing the connection between Items and the UIObjects to visualize the Items, the Inventory class is created. Therefore, the strength of association is the ability to combine many classes to create a very useful and complex class with many properties. 
+Association is the method to establish the connections between classes through another class. When one class has an object referencing the other, it's a "has-a" relationship. For example, the Inventory class is associated with the Item and UIObject classes. The Inventory class is created by establishing the connection between Items and the UIObjects to visualize the Items. Therefore, the strength of association is combining many classes to create a very useful and complex class with many properties. 
 
 <img src='https://raw.githubusercontent.com/Juhyung8371/2D-Sandbox-Game/main/readme_images/association.png' height=100>
 
@@ -50,11 +50,11 @@ Association is the method to establish the connections between classes through a
 
 ### Artificial Intelligence
 
-AI in this game works by running the task with the highest priority from the list. In a nutshell, it's a collection of if-else.
+In this game, AI works by running the task with the highest priority from the list - [check the code for more information](https://github.com/Juhyung8371/2D-Sandbox-Game/tree/main/src/dev/game/ai). In a nutshell, it's a collection of if-else.
 
-Also, there are two types of tasks in my game: active and passive tasks. They can run simultaneously, however, active tasks have much higher priority than passive tasks. 
+Also, my game has two types of tasks: active and passive. They can run simultaneously. However, active tasks have much higher priority than passive tasks. 
 
-For example, there is an entity called a wolf. A wolf wanders around until it finds a target. Then the wolf chases the target and attacks it. This behavior can be portrayed in this manner:
+For example, there is an entity called a wolf. A wolf wanders around until it finds a target. Then, the wolf chases the target and attacks it. This behavior can be portrayed in this manner:
 
 Active Tasks:
 1. Attack (if the target is close)
@@ -87,7 +87,7 @@ In the above image, each cell is a chunk, which contains data about that part of
 
 ### Random Map Generation 
 
-I implemented a random map generation feature using noise (Simplex Noise). Noise is a random group of numbers determined by its frequency and amplitude. However, it is a cloud-like shape generally, and this behavior will make the climate transition more natural. A noise typically looks like the image below on the left.
+I implemented a random map generation feature using noise (Simplex Noise). Noise is a random group of numbers determined by its frequency and amplitude. However, it is generally a cloud-like shape, and this behavior will make the climate transition more natural. A noise typically looks like the image below on the left.
 
 <img src='https://raw.githubusercontent.com/Juhyung8371/2D-Sandbox-Game/main/readme_images/noise.png' height="150"> <img src='https://raw.githubusercontent.com/Juhyung8371/2D-Sandbox-Game/main/readme_images/climate_map.png' height="150">
 
