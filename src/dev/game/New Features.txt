@@ -1,0 +1,26 @@
+1. Periodical data saving
+
+2. Infinite World
+
+3. Random Map Generator (natural environment using noise)
+
+4. Multiple world save support
+
+5. Improved Lighting with shadow effect
+
+6. Cave World
+
+7. Improved collision
+
+8. New entities (Golem, Person etc)
+
+9. Particles
+
+10. Improved animation, and death animation added
+
+11. More naturally spawned entities 
+
+12. Entities health bar feature
+
+13. Added many interesting sounds
+ 

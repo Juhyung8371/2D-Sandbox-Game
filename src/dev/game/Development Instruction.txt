@@ -1,0 +1,86 @@
+
+Development Instruction
+------------------------
+
+This document is to remind myself how to modify the code later.
+
+------------
+To add Item
+------------
+
+1. Add texture of item in texture file, and make the BufferedImage variable in Assets class.
+
+2. Add the new Id of the item in ItemId class.
+
+3. Create an custom item by extending Item class (or UseableItem).
+
+4. Go to Item class and make an variable of the new item and add it to the itemInstance array
+	(order of elements doesn't matter).
+
+5. If item is use-able check "checkUseItem" method in GameState class.
+
+6. Check the item save and load method in GameState if needed.
+
+7. Done.
+
+-----------------------
+To add crafting recipe
+-----------------------
+
+1. Go to AllCraftingRecipe class, make a CraftingRecipe variable.
+
+2. Put that variable in the AllCraftingRecipe.getAllRecipes() array.
+
+3. Done.
+
+--------------
+To add Entity
+--------------
+
+1. Make the texture of entity (if it's moving entity, it's better to make a separate image file)
+
+2. Make the BufferedImage variable in Assets class.
+
+3. Go to EntityId class and add new Id.
+
+4. Create the new entity by extending Entity class (or Creature, StaticEntity, etc.)
+   If it is PlaceableEntity, check checkUseItem() method in GameState class.
+   If the Entity is Creature and is not going to be able to run, 
+   set runnableCreature = false in constructor.
+
+5. If other entity can walk over it, set noCollision = true. PlaceableEntity is noCollision = true by default.
+
+6. If the entity is capable to be naturally spawned, go to EntityManager to add the feature.
+   And also add the case of new entity's natural spawn in NaturalSpawn.spawn() method, if needed 
+   (spawning on specific tile, extra large size entity, etc.).
+
+7. Check the load and save of the entity in Chunk class.
+   Entity with extra information or PlaceableEntity may require modification in saving and loading (fence entity).
+   Look for Chunk.getChunkFromFiles(int, int, String, int)
+
+8. Go to EntityManager.getEntityById(int, int, int) method and add the case of this new Entity.
+
+9. Done.
+
+-------------
+To add Tile
+-------------
+
+1. Add texture of tile in texture file, and make the BufferedImage variable in Assets class.
+
+2. Add the new Id of the tile in TileId class.
+
+3. Create an custom tile by extending Tile class.
+
+4. Go to Tile class and make an variable of the new tile and add it to the tileInstance array
+	(order of elements doesn't matter).
+
+5. If tile has animation, use Animation (See WaterTile for example).
+
+6. Go to MapGenerator class and check getTileByBiome(double, double) 
+   to include the new tile in the random world generation.
+   Also check getRByTile(int, int) for the rate of entity spawn on the tile.
+   
+7. Done.
+
+

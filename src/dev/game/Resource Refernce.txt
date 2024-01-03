@@ -1,0 +1,114 @@
+
+____Graphics______
+
+EntityWolf Sprite:
+* http://www.deviantart.com/art/wolf-spritesheet-199735787
+
+EntityPanda Sprite:
+* https://opengameart.org/content/panda-character-32x32
+
+Stone Tile Sprite:
+* https://wildbunny.co.uk/blog/2012/03/01/designing-a-retro-pixel-art-tile-set/
+
+Sand Tile Sprite:
+* http://www.serebiiforums.com/showthread.php?109428-Sprites-Sprites-Sprites!!!
+
+EntityFence Sprite:
+* https://www.pinterest.com/pin/136163588715987985/
+* https://forums.rpgmakerweb.com/index.php?threads/candacis-resources.19694/
+
+EntityTreant Sprite:
+* http://spritedatabase.net/file/13240
+
+EntityGolem Sprite:
+* https://opengameart.org/content/lpc-golem
+
+_____Sounds_____
+
+Online Audio Editor for Looping (useful site)
+* https://twistedwave.com/online
+
+EntityPerson sound:
+    Talking sound:
+    * http://soundbible.com/1298-Teacher-Charlie-Brown-Talking.html
+    Death sound:
+    * http://soundbible.com/1791-Torture.html
+
+EntityGolem sound:
+    Attack sound:
+    * http://soundbible.com/1604-Depth-Charge-2.html
+    Death sound:
+    * http://soundbible.com/1764-Cave-In.html
+
+EntityWolf sound:
+    Attack sound:
+    * http://soundbible.com/1394-Dragon-Bite.html
+    Death sound:
+    * http://soundbible.com/2149-Dogs-Howling.html
+
+EntityTreant sound:
+    Attack sound:
+    * http://soundbible.com/1163-Battle-Axe-Swing.html
+    Death sound:
+    * http://soundbible.com/2039-Tree-Fall-Small.html
+
+Player attack sound:
+* http://soundbible.com/1176-Sword-Swing.html
+
+Cave bgm:
+* https://www.youtube.com/watch?v=vznyhPnCKi8
+
+Night bgm:
+* https://www.youtube.com/watch?v=XsDBl72hsbo
+
+Day bgm
+* https://www.youtube.com/watch?v=D10ahyZzt7o
+
+Game over sound:
+* https://www.youtube.com/watch?v=Jsz80ZQwzgw
+
+Font:
+* Web graphics by Jason Kottke (jason@kottke.org)
+
+------------
+Codes:
+------------
+
+A* pathfinding tutorial:
+
+* https://www.youtube.com/watch?v=-L-WgKMFuhE
+* Used in Pathfinding class
+
+Quick-sort algorithm:
+
+* http://www.vogella.com/tutorials/JavaAlgorithmsQuicksort/article.html
+* Used in Utils.quickSort
+
+Simplex Noise example:
+
+* http://webstaff.itn.liu.se/~stegu/simplexnoise/
+* Used in SimplexNoise class
+
+Java 2D Game Tutorial:
+
+* Codenmore Youtube
+
+Random map generation tutorial:
+
+* http://www.redblobgames.com/maps/terrain-from-noise
+* Used in MapGenerator class
+
+Infinite world generation outline:
+ * http://www.java-gaming.org/index.php?topic=23484.0
+
+Bresenham's line drawing algorithm:
+
+* https://rosettacode.org/wiki/Bitmap/Bresenham%27s_line_algorithm#Java
+* Used in LightManager class, to create shadow
+
+BufferedImage flip example:
+
+* https://examples.javacodegeeks.com/desktop-java/awt/image/flipping-a-buffered-image/
+* Used in SpriteSheet class
+
+
