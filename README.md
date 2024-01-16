@@ -12,8 +12,7 @@ However, I did not - hoping to get more in-depth insight into game development b
 
 <img src='https://raw.githubusercontent.com/Juhyung8371/2D-Sandbox-Game/main/readme_images/design.png'>
 
-Above is the data structure image. I utilized OOP techniques as much as possible 
-for better organization.  
+Above is the data structure image. I utilized OOP techniques to enhance modularity, scalability, and maintainability.
 
 ### Abstraction and Inheritance:
 
@@ -105,7 +104,7 @@ OOP techniques like inheritance made the implementation easier. For example, let
 
 ## Discussion
 
-I successfully created a 2D sandbox game engine with desired features like maps, entities, artificial intelligence, graphical user interface, etc. 
+I successfully created a 2D sandbox game engine with desired features like maps, entities, artificial intelligence, graphical user interface, etc. From this project, I learned the foundational game development concepts that will help me design, develop, and maintain future game projects. 
 
 Using various OOP techniques, I made this project modular, scalable, and easy to maintain. For instance, if I want to add a new entity, a zombie for instance, I can simply extend the HostileEntity class and add some pre-built AIs like chase and attack.
 
